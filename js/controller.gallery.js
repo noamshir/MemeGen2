@@ -7,6 +7,7 @@ function init() {
   renderKeyWords();
   var elEditor = document.querySelector(".section-editor");
   if (!elEditor.classList.contains("close")) toggleSections();
+  closeUploadModal();
   gIsGallery = true;
 }
 

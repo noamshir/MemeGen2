@@ -17,12 +17,12 @@ a {
 /* FONTS */
 @font-face {
   font-family: Montserrat-bold;
-  src: url("./fonts/Montserrat/Montserrat-Black.ttf");
+  src: url("/fonts/Montserrat/Montserrat-Black.ttf");
 }
 
 @font-face {
   font-family: Montserrat-light;
-  src: url("./fonts/Montserrat/Montserrat-Light.ttf");
+  src: url("/fonts/Montserrat/Montserrat-Light.ttf");
 }
 
 .fa {
@@ -370,7 +370,7 @@ body.menu-open .main-screen {
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 200px;
@@ -457,7 +457,7 @@ body.menu-open .main-screen {
 
 /* Media Queries */
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
   .header-content ul {
     position: fixed;
     top: 0;
@@ -483,28 +483,11 @@ body.menu-open .main-screen {
 }
 
 @media (min-width: 450px) {
-  .btn-menu {
-    display: none;
-  }
-  .header-content ul {
-    display: flex;
-    height: 100%;
-  }
   .main-layout {
     max-width: 450px;
   }
   .header-content {
     max-width: 450px;
-  }
-
-  .header-content ul li a {
-    color: #fff;
-    justify-content: center;
-  }
-
-  .header-content ul li a:hover {
-    color: #040a2c;
-    box-shadow: inset 0px -6px 0 #040a2c;
   }
 
   .canvas-container {
@@ -540,6 +523,22 @@ body.menu-open .main-screen {
 }
 
 @media (min-width: 750px) {
+  .btn-menu {
+    display: none;
+  }
+  .header-content ul {
+    display: flex;
+    height: 100%;
+  }
+  .header-content ul li a {
+    color: #fff;
+    justify-content: center;
+  }
+
+  .header-content ul li a:hover {
+    color: #040a2c;
+    box-shadow: inset 0px -6px 0 #040a2c;
+  }
   .main-layout {
     max-width: 750px;
   }
@@ -581,12 +580,14 @@ body.menu-open .main-screen {
     gap: 100px;
     flex-direction: row;
   }
-  /* .header-buttom {
-    height: 100px;
-  } */
-  /* .keyWords-div {
-    flex-wrap: nowrap;
-  } */
+
+  .upload-modal {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+  }
 }
 
 @media (min-width: 920px) {
